@@ -32,7 +32,21 @@ def jatekos_vesztett_teszt():
 
     if kapott_eredmeny == vart_eredmeny:
         print("a teszt sikeres")
+        return True
     else:
         print("a teszt megbukott")
+        return False
+def gep_vesztett_teszt():
+    jatekos = [10, 9, 3]
+    gep = [10, 6]
+    vart_eredmeny = "gép vesztett"
+    kapott_eredmeny = eredmeny(gep, jatekos)
 
+    if kapott_eredmeny == vart_eredmeny:
+        print("a teszt sikeres")
+        return True
+
+    else:
+        print("a teszt megbukott")
+        return False
 tesztesetek()
