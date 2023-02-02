@@ -22,7 +22,10 @@ def eredmeny(gLapok: [int], jLapok: [int]):
 
 # teszt esetek
 def tesztesetek():
-    jatekos_vesztett_teszt()
+    if jatekos_vesztett_teszt():
+        print("jatékosvesztet")
+    else:
+        print("jatékos nyert")
 
 def jatekos_vesztett_teszt():
     jatekos = [10, 9, 3]
