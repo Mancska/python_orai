@@ -27,6 +27,17 @@ def tesztesetek():
     else:
         print("jatékos nyert")
 
+def nagyobb_mint_21(Jpontokosszege2,Gpontokosszege2):
+    if Jpontokosszege2>21:
+        print("jatékos vesztet")
+    if Gpontokosszege2>21:
+        print("gép vesztet")
+def ki_van_közelebb(Jpontokosszege2,Gpontokosszege2):
+    if Jpontokosszege2>Gpontokosszege2:
+        print("jatékos van közelebb")
+    if Gpontokosszege2>Jpontokosszege2:
+        print("gép van közelebb")
+
 def jatekos_vesztett_teszt():
     jatekos = [10, 9, 3]
     gep = [10, 6]
