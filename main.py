@@ -30,8 +30,20 @@ def tesztesetek():
 def nagyobb_mint_21(Jpontokosszege2,Gpontokosszege2):
     if Jpontokosszege2>21:
         print("jatékos vesztet")
-    if Gpontokosszege2>21:
+    elif Gpontokosszege2>21:
         print("gép vesztet")
+    elif Jpontokosszege2>21 and Gpontokosszege2>21:
+        print("mind kettö vesztet")
+def dontetlen(Jpontokosszege2,Gpontokosszege2,jkez,gepkez):
+    if Jpontokosszege2 == Gpontokosszege2:
+        if len(jkez)>len(gepkez):
+            print("jatekos nyer")
+            return True
+        if len(jkez)<len(gepkez):
+            print("gép nyert")
+            return False
+
+
 def ki_van_közelebb(Jpontokosszege2,Gpontokosszege2):
     if Jpontokosszege2>Gpontokosszege2:
         print("jatékos van közelebb")
